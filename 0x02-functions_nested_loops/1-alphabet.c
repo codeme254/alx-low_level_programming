@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
-  *main - check the code
-  * print_alphabet - function that prints alphabet lettes in lower case
+  *print_alphabet - function that prints alphabet lettes in lower case
   *Return: always 0
 **/
 
@@ -17,8 +16,3 @@ void print_alphabet(void)
 	_putchar('\n');
 }
 
-int man(void)
-{
-	print_alphabet();
-	return (0);
-}
