@@ -15,3 +15,9 @@ void print_alphabet()
 	}
 	_putchar('\n');
 }
+
+int man(void)
+{
+	print_alphabet();
+	return (0);
+}
