@@ -21,4 +21,5 @@ void rev_string(char *s)
 		s[length - i - 1] = temp;
 	}
 	puts((const char *)s);
+	puts("%c");
 }
