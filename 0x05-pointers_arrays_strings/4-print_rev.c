@@ -8,6 +8,9 @@
 
 void print_rev(char *s)
 {
-	puts(strrev((const char *)s));
+	char reversed[];
+
+	reversed = strrev(*s);
+	puts(reversed);
 }
 
