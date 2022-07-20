@@ -7,25 +7,15 @@
 
 int is_prime_number(int n)
 {
-	int i;
-	int counter;
-
-	if (n <= 1)
-		return (0);
-
-	for (i = 1; i <= n; i++)
+	int is_prime(int dig, int i = 2)
 	{
-		if (n % i == 0)
-		{
-			counter++;
-		}
-	}
-	if (n == 2)
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
+		number = n;
+		if (number <= 2)
+			return (n == 2 ? 1 : 0);
+		if (number % 1 == 0)
+			return (0);
+		if (i * i > n)
+			return (1);
+		return is_prime(number, i + 1);
 	}
 }
