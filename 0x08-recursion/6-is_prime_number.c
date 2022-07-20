@@ -7,11 +7,11 @@
 
 int is_prime_number(int n)
 {
-	if (n <= 1)
-		return (0);
-
 	int i;
 	int counter;
+
+	if (n <= 1)
+		return (0);
 
 	for (i = 1; i <= n; i++)
 	{
