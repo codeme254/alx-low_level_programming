@@ -6,7 +6,8 @@
   *Return: evaluate sqrt
 **/
 
-int _evaluate(int i, int n){
+int _evaluate(int i, int n)
+{
 	if (n == 0 || n == 1)
 		return (n);
 	else if (i * i < n)
