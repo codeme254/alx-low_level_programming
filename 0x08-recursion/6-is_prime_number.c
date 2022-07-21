@@ -1,21 +1,36 @@
 #include "main.h"
 /**
-  *is_prime_number - function that check if a number is prime
-  *@n : input digit
-  *Return: 0 success
+  *evaluate_num - recursion loop
+  *@num : number
+  *@iterator : number to iterate
+  *Return: return either 1 or 0
  **/
 
-int is_prime_number(int n)
+int evaluate_num(int num, int iterator)
 {
-	int is_prime(int dig, int i = 2)
-	{
-		number = n;
-		if (number <= 2)
-			return (n == 2 ? 1 : 0);
-		if (number % 1 == 0)
-			return (0);
-		if (i * i > n)
-			return (1);
-		return is_prime(number, i + 1);
-	}
+	if (iterator == num - 1)
+		return (1);
+	else if (num % iterator == 0)
+		return (0);
+	if (num % iterator != 0)
+		return (evaluate_num(num, iterator + 1));
+	return (0);
+}
+
+/**
+  *is_prime_number - evaluate whether a number is prime or not
+  *@num : input digit
+  *Return: returns 1 if number is prime and 0 if number is not
+**/
+
+int is_prime_number(int num)
+{
+	int iterator;
+	iterator = 2;
+
+	if (num < 2)
+		return (0);
+	if (num == 2)
+		return (1);
+	return (evaluate_num(num, iterator));
 }
