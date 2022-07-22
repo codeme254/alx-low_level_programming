@@ -3,7 +3,7 @@
 /**
   *_abs - maybe converts to absolute value
   *@n : input integer
-  *Return : absolute value of n
+  *Return: absolute value of n
 **/
 
 int _abs(int n)

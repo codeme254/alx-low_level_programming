@@ -7,7 +7,7 @@
   *Return: the return value of the function
 **/
 
-char *_strchar(char *s, char c)
+char *_strchr(char *s, char c)
 {
 	/*code here*/
 }

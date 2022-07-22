@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-  *puts - function that prints a character to the console
+  *_puts - function that prints a character to the console
   *@s : input character
 **/
 
