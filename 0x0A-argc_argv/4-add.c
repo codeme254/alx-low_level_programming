@@ -12,11 +12,11 @@ int main(int argc, char *argv[])
 {
 	int i, result = 0;
 
-	if (argc < 1)
+	else if (argc < 1)
 		return (0);
 	for (i = 1; i < argc; i++)
 	{
-		if (!atoi(argv[i]) || atoi(argv[i]) < 1)
+		if (!atoi(argv[i]) || atoi(argv[i] < 0))
 		{
 			printf("%s\n", "Error");
 			return (1);
