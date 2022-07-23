@@ -10,12 +10,11 @@
 
 int main(int argc, char *argv[])
 {
-	int i, result = 0;
+	int i, sum = 0;
 
 	if (argc < 1)
-	{
 		return (0);
-	}
+	
 	for (i = 1; i < argc; i++)
 	{
 		if (!atoi(argv[i]))
@@ -23,9 +22,9 @@ int main(int argc, char *argv[])
 			printf("%s\n", "Error");
 			return (1);
 		}
-		result += atoi(argv[i]);
+		sum += atoi(argv[i]);
 	}
-	printf("%d\n", result);
+	printf("%d\n", sum);
 	return (0);
 }
 
