@@ -27,6 +27,7 @@ char *_strdup(char *str)
 
 	if (array == NULL)
 		return (NULL);
+	free(array);
 	return (array);
 }
 
