@@ -1,5 +1,5 @@
 #include "main.h"
-#include < stdlib.h>
+#include <stdlib.h>
 
 /**
   *_strdup - rets ptr to newly alloc space in mem containing cp of stras prm
