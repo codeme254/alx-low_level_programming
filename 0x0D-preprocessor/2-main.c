@@ -5,10 +5,10 @@
   *Return: 0
   */
 
-#define FILE_NAME __FILE__
+#define FILENAME __FILE__
 
-int main()
+int main(void)
 {
-	printf("%s\n", FILE_NAME);
+	printf("%s\n", FILENAME);
 	return (0);
 }
