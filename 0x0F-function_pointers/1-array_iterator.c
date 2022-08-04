@@ -3,11 +3,11 @@
   *array_iterator - executes a func given as parameter on each element of arr
   *@array: array of integers
   *@size: size of array
-  *@action: function pointer
+  *@action: pointer to the function we need to use
   */
-void array_iterator(int *array, size_t size, void (*action)(int))
+void array_iterator(int *array, int size, void (*action)(int))
 {
-	size_t i;
+	int i;
 
 	if (!array || !action)
 		return;
