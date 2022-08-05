@@ -1,45 +1,29 @@
-#include <stdarg.h>
 #include <stdio.h>
+#include <stdarg.h>
 
 /**
-  *print_strings - prints strings followed by a new line
-  *@seperator : string to be printed between strings
-  *@n : number of strings to be passed into the functions
-  *if seperator is null, don't print it
-  *if one of the string is NULL, print (nil) instead of NULL
-  */
-
-void print_strings(const char *seperator, const unsigned int n, ...)
+ * print_strings - prints strings, followed by a new line.
+ * @separator: the string to be printed between the strings
+ * @n: count of parameters
+ */
+void print_strings(const char *separator, const unsigned int n, ...)
 {
-	va_list args;
 	unsigned int i;
-	char *currString;
+	va_list list;
+	char *hold;
 
-	va_start(args, n);
+	va_start(list, n);
 	for (i = 0; i < n; i++)
 	{
-		currString = va_arg(args, char *);
-		if (seperator == NULL)
-			printf("%s", currString);
+		hold = va_arg(list, char*);
+		if (hold == NULL)
+			printf("(nil)");
 		else
-		{
-			if (i != 0 && currString != NULL)
-			{
-				printf("%s", seperator);
-				printf("%s", currString);
-			}
-			else if (i == 0 && currString != NULL)
-				printf("%s", currString);
-			else if (currString == NULL)
-			{
-				printf("%s", seperator);
-				printf("nil");
-			}
-		}
+			printf("%s", hold);
+		if (i != (n - 1) && separator != NULL)
+			printf("%s", separator);
 	}
-	va_end(args);
 	printf("\n");
+
+	va_end(list);
 }
-
-
-
