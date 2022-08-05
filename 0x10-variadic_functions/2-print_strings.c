@@ -23,13 +23,18 @@ void print_strings(const char *seperator, const unsigned int n, ...)
 			printf("%s", currString);
 		else
 		{
-			if (i != 0)
+			if (i != 0 && currString != NULL)
 			{
 				printf("%s", seperator);
 				printf("%s", currString);
 			}
-			else if (i == 0)
+			else if (i == 0 && currString != NULL)
 				printf("%s", currString);
+			else if (currString == NULL)
+			{
+				printf("%s", seperator);
+				printf("nil");
+			}
 		}
 	}
 	va_end(args);
