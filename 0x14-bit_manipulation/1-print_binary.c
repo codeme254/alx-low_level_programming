@@ -6,7 +6,6 @@ include "main.h"
  *
  * Return;
  *
- * Author: Renish
  */
 
 void print_binary(unsigned long int n)
