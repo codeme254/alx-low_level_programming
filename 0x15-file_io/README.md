@@ -33,8 +33,3 @@ What is the difference between a function and a system call
 
 ### [4. elf](./100-elf_header.c)
 * Write a program that displays the information contained in the ELF header at the start of an ELF file.
-
----
-
-## Author
-* **Derrick Gee** - [kai-dg](https://github.com/kai-dg)
