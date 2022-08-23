@@ -1,4 +1,4 @@
-# 0x14. C - File I/O
+# file i/o
 
 ## Description
 What you should learn from this project:
