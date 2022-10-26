@@ -1,4 +1,4 @@
-#include "main.h"
+#include "hash_tables.h"
 /**
 * hash_table_create - function that creates a hash table
 * @size: the size of the array
