@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef HASH_TABLES_H
+#define HASH_TABLES_H
 #include <stdio.h>
 #include <stdlib.h>
 /**
@@ -30,4 +30,4 @@ typedef struct hash_table_s
 	unsigned long int size;
 	hash_node_t **array;
 } hash_table_t;
-#endif MAIN_H
+#endif HASH_TABLES_H
